@@ -23,10 +23,11 @@ public class Point {
         return y;
     }
 
-    public int translate(int xM, int yM){
+    public Point translate(int xM, int yM){
         this.x += xM;
         this.y += yM;
-        return ;
+        Point p1 = new Point(x, y);
+        return p1;
 
     }
 //
@@ -37,16 +38,16 @@ public class Point {
     public void setX(int x) {
         this.x = x;
     }
-//
-//    public void setY(int y) {
-//        this.y = y;
-//    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
 
     public static void main(String[] args) {
         Point p = new Point(3,4);
-        Point p1 = new Point();
+
         System.out.println("This is new point on x = " + p.getX() + " and y = " + p.getY());
-//        p.translate(1,3);
+        System.out.println("Point p move to " + p.translate(1,3));
     }
 }
 
