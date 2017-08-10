@@ -12,21 +12,40 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+// task 10 - randomElement
+// static method can`t have object
 
+//        int[] arrWin = new int[6];
+//
+//        for (int i = 0; i < arrWin.length; i++) {
+//            int randomIndex = (int) (Math.random() * arr.length);
+//            arrWin[i] = arr[randomIndex];
+//        }
+//        System.out.println(Arrays.toString(arrWin));
+//
+//        ArrayList<Integer> arrListWin = new ArrayList<>();
+//
+//        for (int i = 0; i < arrWin.length; i++) {
+//            arrListWin.add(arrWin[i]);
+//        }
 
-// task 4 - IntHolder //todo
+// task 9 - class Car todo
 
-// task 3 - setter != void, getter = void //todo
+// task 5-8 - see class Point
+
+// task 4 - IntHolder todo
+
+// task 3 - setter != void, getter = void todo
 
 // task 2 - accessor = getter (returns a class's variable or its value)
 //          mutator = setter (sets a class's variable or its value)
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        int number = in.nextInt(); // accessor
-        System.out.println(number);
-
-        Random r = new Random(); // better to use than Math
-        System.out.println(r.nextInt(number)); // accessor
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Enter number: ");
+//        int number = in.nextInt(); // accessor
+//        System.out.println(number);
+//
+//        Random r = new Random(); // better to use than Math
+//        System.out.println(r.nextInt(number)); // accessor
 
 // task 1 - calendar with the begin on Sunday
 //        LocalDate date = LocalDate.now();
