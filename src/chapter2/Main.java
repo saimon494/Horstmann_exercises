@@ -6,27 +6,44 @@ import org.omg.CORBA.IntHolder;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import static java.lang.System.*;
+
 
 public class Main {
     public static void main(String[] args) {
 
-// task 10 - randomElement
-// static method can`t have object
+// task 13 - Add jar^ Project Structure->Modules->Dependencies->Add todo
+// import com.opencsv.*;
 
-//        int[] arrWin = new int[6];
-//
-//        for (int i = 0; i < arrWin.length; i++) {
-//            int randomIndex = (int) (Math.random() * arr.length);
-//            arrWin[i] = arr[randomIndex];
-//        }
-//        System.out.println(Arrays.toString(arrWin));
-//
-//        ArrayList<Integer> arrListWin = new ArrayList<>();
-//
-//        for (int i = 0; i < arrWin.length; i++) {
-//            arrListWin.add(arrWin[i]);
+// task 12 - Java file in wrong (different package) folder
+// > javap HelloWorld
+// > Warning: Binary file HelloWorld contains chapter2.HelloWorld
+//   Compiled from "HelloWorld.java"
+//   public class chapter2.HelloWorld {
+//    public chapter2.HelloWorld();
+//    public static void main(java.lang.String[]);
+//}
+// after use javac -d . HelloWorld.java
+// new folder "chapter2" create with HelloWorld.class
+
+// task 11 - Static import
+// import static java.lang.System.*;
+// can use methods without prefix System.
+// For example, getProperties();
+
+// task 10 - randomElement from array
+// static method can`t have object
+//        public void randomElement (int randomIndex) {
+//            int[] arr = new int[5];
+//            for (int i = 0; i < arr.length; i++) {
+//                arr[i] = i + 1;
+//            }
+//            randomIndex = (int) (Math.random() * arr.length);
+//            System.out.println(Arrays.toString(arr));
+//            System.out.println(arr[randomIndex]);
 //        }
 
 // task 9 - class Car todo
