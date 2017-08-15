@@ -9,14 +9,17 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+
 import static java.lang.System.*;
-import com.opencsv.*;
 
 public class Main {
     public static void main(String[] args) {
 
 // task 15 - static nested class
-
+        Invoice newInvoice = new Invoice();
+        newInvoice.addItem("book", 1, 20.15);
+        newInvoice.addItem("magazine", 2, 14.60);
+        System.out.println(newInvoice.getItems());
 
 
 // task 14 - Inner class - Network$Member.class
@@ -29,9 +32,9 @@ public class Main {
 // > Warning: Binary file HelloWorld contains chapter2.HelloWorld
 //   Compiled from "HelloWorld.java"
 //   public class chapter2.HelloWorld {
-//    public chapter2.HelloWorld();
-//    public static void main(java.lang.String[]);
-//}
+//       public chapter2.HelloWorld();
+//       public static void main(java.lang.String[]);
+//   }
 // after use javac -d . HelloWorld.java
 // new folder "chapter2" create with HelloWorld.class
 
