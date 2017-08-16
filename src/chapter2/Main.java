@@ -7,19 +7,33 @@ import org.omg.CORBA.IntHolder;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) {
 
-// task 15 - static nested class
-        Invoice newInvoice = new Invoice();
-        newInvoice.addItem("book", 1, 20.15);
-        newInvoice.addItem("magazine", 2, 14.60);
-        System.out.println(newInvoice.getItems());
+// task 16 - inner class todo
+
+//// task 15 - static nested class
+//        Invoice newInvoice = new Invoice();
+//        newInvoice.addItem("book", 1, 20.15);
+//        newInvoice.addItem("magazine", 2, 14.60);
+//        String s = newInvoice.itemsOut();
+//        System.out.println(s); //todo
+
+//        String s = String.join(", ", newInvoice.itemsOut());
+//        System.out.println(s);
+
+
+//        String listString = String.join(", ", newInvoice.itemsOut());
+//        String listString = newInvoice.getItems().stream().map(Object::toString)
+//                .collect(Collectors.joining(", "));
+//        System.out.println(listString);
 
 
 // task 14 - Inner class - Network$Member.class
